@@ -1,7 +1,7 @@
 // DataService.getTodos(console.log)
 
 DataService.getTodos()
-.then(data => Todolist.fromObjectArray('lista figa', data))
+.then(data => Todolist.fromObjectArray('ToDo List', data))
 .then(todoList => displayTodos(todoList));
 
 // function transformData(data) {
@@ -38,14 +38,30 @@ function displayTodos(todoList) {
         const titleNode = document.createTextNode(todo.title);
         const dateNode= document.createTextNode(todo.creationDate);
 
+        const removeBtn = document.createElement('button');
+        const textBtn = document.createTextNode('Remove ToDo');
+
+        
+
         titleSpan.appendChild(titleNode);
         dateSpan.appendChild(dateNode);
 
         newLi.appendChild(titleSpan);
         newLi.appendChild(dateSpan);
+
+        removeBtn.appendChild(textBtn);
+        newLi.appendChild(removeBtn);
+        removeBtn.classList.add('remove-btn');
         
         todoListUl.appendChild(newLi);
 
     }
 }
     
+
+
+
+
+const array = ['pollo', 'patatine', 'birra', 'gelato', 'aranciata'];
+
+console.log(array.sort())

@@ -8,18 +8,30 @@
     <title>Async Programming</title>
 </head>
 <body>
-    <div id="main">
-        <h2 id="list-name"></h2>
-        <ul id="todo-list">
+    <main>
+        <div id="main">
+            <h2 id="list-name"></h2>
+            <ul id="todo-list">
             
-            <!-- <li class="todo-li">
-                <span class="todo-title">dare da mangiare al cane</span>
-                <span class="todo-date">12/04/2023</span>
+                <!-- <li class="todo-li">
+                    <span class="todo-title">dare da mangiare al cane</span>
+                    <span class="todo-date">12/04/2023</span>
 
-            </li> -->
+                </li> -->
 
-        </ul>
-    </div>
+            </ul>
+        </div>
+        <div id="aside">
+            <div class="add-box">
+                <h2>Nuovo ToDo</h2>
+                <span>ToDo:</span><br>
+                <input type="text" placeholder="Inserisci ToDo"><br>
+                <span>Data:</span><br>
+                <input type="text" placeholder="dd/mm/yyyy"><br>
+                <button id="add-button">Aggiungi ToDo</button>
+            </div>
+        </div>
+    </main>
 </body>
 <script src="./dataService.js"></script>
 <script src="./todo.js"></script>

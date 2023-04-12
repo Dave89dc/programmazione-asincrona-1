@@ -10,11 +10,13 @@ class Todolist{
     }
 
     removeTodo(todo){
-
+        const toDoIndex = this.todoArray.indexOf(todo);
+        this.todoArray.splice(toDoIndex, 1);
+        displayTodos();
     }
 
     sortByTitle(){
-
+        return this.todoArray.sort();
     }
 
     sortByCreationDate(){

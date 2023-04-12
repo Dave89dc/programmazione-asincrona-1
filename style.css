@@ -1,18 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    background-color: rgb(200, 200, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: Merriweather Sans, sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+#main {
+    width: 80%;
+}
+
 .todo-title{
-font-weight: bold;
-font-size: x-large;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .todo-date{
-color: #515151;
+    color: #515151;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+#list-name {
+    font-size: 60px;
+    text-align: center;
+    color: darkslateblue;
+    text-shadow: 2px 2px 4px black;
 }
 
 .todo-li{
     display: flex;
     flex-direction: column;
-    border-style: solid ;
-    border-width: 1px;
+    border-style: solid;
+    border-width: 2px;
     border-radius: 10px;
-    padding: 5px;
+    padding: 20px;
+    background-color: #e2e2e2;
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: 0 0 4px 0 black;
+    text-align: center;
+}
 
+.todo-li:hover {
+    box-shadow: none;
+}
+
+.remove-btn {
+    width: 80px;
+    float: right;
+    background-color: rgb(116, 109, 161);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    margin: auto;
+    box-shadow: 0 0 4px 0 black;
+}
+
+.remove-btn:active {
+    box-shadow: none;
+}
+
+span {
+    margin: 5px;
+}
+
+#aside {
+    width: 20%;
+    background-color: darkslateblue;
+    border-left: 2px solid black;
+    box-shadow: 0 0 4px 0 black;
+}
+
+.add-box {
+    width: 80%;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    margin: 120px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(69, 60, 128);
+    box-shadow: 0 0 4px 0 black;
+    position: sticky;
+    top: 120px;
+    color: white;
+    font-size: x-large;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px black;
+}
+
+input {
+    width: 70%;
+    height: 20px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#add-button {
+    width: 40%;
+    height: 10%;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 4px 0 black;
+    cursor: pointer;
+    background-color: white;
+}
+
+#add-button:active {
+    box-shadow: none;
 }

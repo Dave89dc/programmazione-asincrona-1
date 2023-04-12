@@ -10,19 +10,28 @@ class Todo{
     }
 
     get creationDate(){
-
-    }
+        const millisec = this._creationDate * 1000;
+        const date = new Date(millisec);
+        return (`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`);
+    }    
 
     set creationDate(newDate){
-
+        this._creationDate = newDate;
+        return this._creationDate;
     }
 
     compareByTitle(todo2){
-
+        return this.title.localeCompare(todo2.title);
     }
 
     compareByCreationDate(todo2){
-
+        if(this._creationDate > todo2._creationDate) {
+            return 1;
+        } else if(this._creationDate < todo2._creationDate) {
+            return -1;
+        } else {
+            return 0;
+        }
     }
 
     static fromTodoObject(todoObject) {
