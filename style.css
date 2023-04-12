@@ -27,7 +27,7 @@ main {
 }
 
 #list-name {
-    font-size: 60px;
+    font-size: 80px;
     text-align: center;
     color: darkslateblue;
     text-shadow: 2px 2px 4px black;
@@ -86,7 +86,7 @@ span {
     margin: 120px auto;
     border: 2px solid black;
     border-radius: 20px;
-    background-color: rgb(69, 60, 128);
+    background-color: rgb(116, 109, 161);
     box-shadow: 0 0 4px 0 black;
     position: sticky;
     top: 120px;
