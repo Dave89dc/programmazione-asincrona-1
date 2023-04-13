@@ -12,12 +12,14 @@ class Todo{
     get creationDate(){
         const millisec = this._creationDate * 1000;
         const date = new Date(millisec);
-        return (`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`);
+        // return (`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`);
+        return date;
     }    
 
     set creationDate(newDate){
-        this._creationDate = newDate;
-        return this._creationDate;
+        const millSec = newDate.getTime();
+        const seconds = millSec / 1000;
+        this._creationDate = seconds;
     }
 
     compareByTitle(todo2){

@@ -10,21 +10,19 @@ class Todolist{
     }
 
     removeTodo(todo){
-        const toDoIndex = this.todoArray.indexOf(todo);
-        this.todoArray.splice(toDoIndex, 1);
-        displayTodos();
+        this.todoArray = this.todoArray.filter((element) => element !== todo);
     }
 
     sortByTitle(){
-        return this.todoArray.sort();
+        return this.todoArray.sort((todo1, todo2) => todo1.compareByTitle(todo2));
     }
 
     sortByCreationDate(){
-
+        return this.todoArray.sort((todo1, todo2) => todo1.compareByCreationDate(todo2));
     }
 
     completeTodo(todo){
-
+        todo.isCompleted = true;
     }
 
     static fromObjectArray(title, objectArray) {

@@ -26,3 +26,8 @@ class DataService {
 
 
 }
+
+// GET => Lettura dei dati
+// POST => Scrittura dei dati
+// PUT => Modifica dei dati
+// DELETE => Cancellazione dei dati
