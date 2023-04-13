@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* * {
-    box-sizing: border-box;
-} */
-
 body {
     width: 100%;
     background-color: rgb(200, 200, 255);
@@ -26,21 +22,22 @@ main {
 
 #todo-list {
     width: 100%;
+    padding: 0px;
 }
 
-.todo-title{
+#todo-title{
     font-weight: bold;
     font-size: xx-large;
 }
 
-.todo-date{
+#todo-date{
     color: #515151;
     font-size: x-large;
     margin-bottom: 10px;
 }
 
 #list-name {
-    font-size: 80px;
+    font-size: 90px;
     text-align: center;
     color: darkslateblue;
     text-shadow: 2px 2px 4px black;
@@ -92,6 +89,9 @@ span {
     box-shadow: 0 0 4px 0 black;
     position: sticky;
     top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-box {
@@ -99,7 +99,6 @@ span {
     height: 400px;
     padding: 10px;
     text-align: center;
-    margin: 120px auto;
     border: 2px solid black;
     border-radius: 20px;
     background-color: rgb(116, 109, 161);
@@ -153,4 +152,53 @@ input {
     background-color: darkslateblue;
     color: white;
     margin: 10px auto;
+}
+
+.complete-button, .delete-button {
+    width: 100px;
+    height: 26px;
+    margin: 5px auto;
+    font-weight: bold;
+    box-shadow: 0 0 4px 0 black;
+    cursor: pointer;
+    background-color: darkslateblue;
+    color: white;
+    border-radius: 5px;
+}
+
+.todo-li-true {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: darkslateblue;
+    color: white;
+    width: 70%;
+    margin: 30px auto;
+    box-shadow: 0 0 4px 0 black;
+    text-align: center;
+}
+
+.todo-li-true:hover {
+    box-shadow: none;
+}
+
+#todo-date-true {
+    color: white;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
+.complete-button-true, .delete-button-true {
+    width: 100px;
+    height: 26px;
+    margin: 5px auto;
+    font-weight: bold;
+    box-shadow: 0 0 4px 0 black;
+    cursor: pointer;
+    background-color: white;
+    color: darkslateblue;
+    border-radius: 5px;
 }

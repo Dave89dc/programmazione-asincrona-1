@@ -12,7 +12,6 @@ class Todo{
     get creationDate(){
         const millisec = this._creationDate * 1000;
         const date = new Date(millisec);
-        // return (`${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`);
         return date;
     }    
 
@@ -40,5 +39,9 @@ class Todo{
         return new Todo(todoObject.title, todoObject.creationDate, todoObject.isCompleted, todoObject.id);
     }
 
-
+    get dateAndHour() {
+        const dateHour = this.creationDate;
+        return (`${dateHour.getDate()}/${dateHour.getMonth()+1}/${dateHour.getFullYear()} - ${dateHour.getHours()}:${dateHour.getMinutes()}`);
+    }
+        
 }
