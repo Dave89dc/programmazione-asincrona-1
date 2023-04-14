@@ -36,6 +36,17 @@ main {
     margin-bottom: 10px;
 }
 
+.todo-title{
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.todo-date{
+    color: #515151;
+    font-size: x-large;
+    margin-bottom: 10px;
+}
+
 #list-name {
     font-size: 90px;
     text-align: center;

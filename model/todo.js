@@ -43,5 +43,17 @@ class Todo{
         const dateHour = this.creationDate;
         return (`${dateHour.getDate()}/${dateHour.getMonth()+1}/${dateHour.getFullYear()} - ${dateHour.getHours()}:${dateHour.getMinutes()}`);
     }
+
+    tiDbModel() {
+
+        const dbModel = {
+            title: this.title,
+            creationDate: this._creationDate,
+            isCompleted: this.isCompleted,
+            id: this.id
+        };
+        return dbModel;
+        
+    };
         
 }
